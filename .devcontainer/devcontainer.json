@@ -21,7 +21,8 @@
 				"esbenp.prettier-vscode",
 				"vscode-icons-team.vscode-icons",
 				"wayou.vscode-todo-highlight",
-				"github.vscode-pull-request-github"
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
 			],
 			"settings": {
 				"editor.fontSize": 25,
