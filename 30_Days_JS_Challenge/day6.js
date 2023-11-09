@@ -1,0 +1,1 @@
+// I Completed all the challenges of Day 6 of 30 Days Of JavaScript Challenge.
