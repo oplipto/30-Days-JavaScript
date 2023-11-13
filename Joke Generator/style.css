@@ -45,7 +45,7 @@ a {
   height: 100vh;
   width: 50vw;
   border-right: 2px solid black;
-  font-size: 4vw;
+  font-size: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,5 +77,12 @@ a {
   justify-content: center;
   align-items: center; 
   text-align: center;
+  overflow: scroll;
 
+}
+
+#memeImage {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
 }
