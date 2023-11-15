@@ -12,3 +12,7 @@ myButton.addEventListener('click', function() {
       secondPara.innerText = data.setup + ' ' + data.punchline;
     });
 });
+
+document.querySelector('.nav-toggle-label').addEventListener('click', function() {
+  document.getElementById('nav-toggle').checked = !document.getElementById('nav-toggle').checked;
+});

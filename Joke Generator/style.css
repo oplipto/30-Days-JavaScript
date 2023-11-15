@@ -49,8 +49,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
-  text-align: center; 
+  align-items: center;
+  text-align: center;
   min-width: 300px;
 }
 
@@ -75,14 +75,83 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
-  overflow: scroll;
-
 }
 
 #memeImage {
   max-width: 90%;
   height: auto;
   object-fit: contain;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background-color: aqua;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none; 
+  width: 2rem;
+  height: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: black;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .NavRight {
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .NavRight {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .nav, .main, .footer {
+    flex-direction: column;
+  }
+
+  .nav, .NavRight {
+    flex-direction: row;
+  }
+
+  .NavRight a {
+    margin: 0 5px;
+  }
+
+  .left, .right {
+    width: 100%;
+    height: auto;
+  }
+
+  .left button {
+    width: 60%;
+  }
+
+  .footer {
+    height: auto;
+    padding: 10px;
+    font-size: 12px;
+  }
 }
